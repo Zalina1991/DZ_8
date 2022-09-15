@@ -8,7 +8,7 @@
 9 5 3 2
 8 4 4 2 */
 
-/* int[,] GetArray(int m, int n)
+int[,] GetArray(int m, int n)
 {
     int[,] array = new int[m, n];
 
@@ -70,7 +70,6 @@ void Array2(int[,] array)
     }
 }
 
- */
 
 /* Задача 56: Задайте прямоугольный двумерный массив. 
 Напишите программу, которая будет находить строку 
@@ -84,7 +83,7 @@ void Array2(int[,] array)
 строке и выдаёт номер строки 
 с наименьшей суммой элементов: 1 строка
  */
-/* int[,] GetArray(int m, int n) {
+int[,] GetArray(int m, int n) {
     int[,] array = new int[m, n];
     for (int i = 0; i < m ; ++i) {
         for (int j = 0; j < n ; ++j) {
@@ -129,7 +128,7 @@ for (int i = 0; i < rows; i++)
         sum = isum;
 }
 Console.WriteLine(rows + " строка с наименьшей суммой элементов");
-Console.WriteLine(""); */
+Console.WriteLine("");
     
 
 
@@ -143,7 +142,7 @@ Console.WriteLine(""); */
 18 20
 15 18 */
 
-/* int Array(string array2)
+int Array(string array2)
 {
     Console.Write(array2);
     return int.Parse(Console.ReadLine());
@@ -198,7 +197,7 @@ PrintArray(matrix2);
 Console.WriteLine();
 Console.WriteLine("Произведение матриц 1*2");
 PrintArray(matrix3);
- */
+
  
 
 /* Задача 60.Сформируйте трёхмерный массив из неповторяющихся 
@@ -209,7 +208,8 @@ PrintArray(matrix3);
 34(1,0,0) 41(1,1,0)
 27(0,0,1) 90(0,1,1)
 26(1,0,1) 55(1,1,1) */
-/* int[,,] GetArray(int m, int n, int p) {
+
+int[,,] GetArray(int m, int n, int p) {
     int[,,] array = new int[m, n, p];
     for (int i = 0; i < m ; ++i) {
         for (int j = 0; j < n ; ++j) 
@@ -243,7 +243,7 @@ Console.Write("Vvedite kolichestvo height array: ");
 int p = int.Parse(Console.ReadLine());
 int[,,] array = GetArray(m, n, p);
 PrintArray(array);
-Console.WriteLine(); */
+Console.WriteLine();
 
 
 /* Задача 62. Напишите программу, которая заполнит спирально массив 4 на 4.
